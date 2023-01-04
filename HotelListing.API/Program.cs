@@ -36,6 +36,8 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
 //zasto scoped, bolje je bilo transient?
 
+builder.Services.AddScoped<IHotelsRepository, HotelsRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
